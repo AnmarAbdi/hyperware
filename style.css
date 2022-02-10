@@ -221,35 +221,6 @@ marquee {
   text-align: center;
   
 }
-.lightning1{
-  float: left;
-  padding-left: 100px;
-}
-.lightning2{
-  float: right;
-  padding-right: 100px;
-}
-.moving-lightning{
-  animation-name: laptop;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes laptop {
-  0% {
-    transform: translate(0, 0px);
-  }
-
-  50% {
-    transform: translate(0, 15px);
-  }
-
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
-
 
 
   
@@ -415,3 +386,44 @@ marquee {
   margin-bottom: 10px;
   /* Added */
 }
+
+/* Test */
+.lightning1{
+  float: left;
+  padding-left: 30%;
+}
+.lightning2{
+  float: right;
+  padding-right: 30%;
+}
+.lightning3{
+  float: left;
+  padding-left: 20%;
+  
+}
+.lightning4{
+  float: right;
+  padding-right: 20%;
+}
+
+.moving-lightning{
+  animation-name: laptop;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes laptop {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
