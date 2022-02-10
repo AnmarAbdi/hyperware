@@ -361,7 +361,7 @@ marquee {
 
 /* About Page */
 .large-h1 {
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -390,11 +390,11 @@ marquee {
 /* Test */
 .lightning1{
   float: left;
-  padding-left: 30%;
+  padding-left: 40%;
 }
 .lightning2{
   float: right;
-  padding-right: 30%;
+  padding-right: 40%;
 }
 .lightning3{
   float: left;
@@ -427,3 +427,18 @@ marquee {
 }
 
 
+/* Shop CSS */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* End of Shop CSS */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
