@@ -62,7 +62,8 @@ a{
     font-family: pressstart;
     border: none;
   }
-/* Navbar */
+
+  
 /*Navbar*/
 .sidenav {
     height: 100%;
@@ -360,8 +361,18 @@ marquee {
 }
 
 /* About Page */
+.lead {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .large-h1 {
   font-size: 80px;
+  text-align: center;
+}
+
+.large-h3 {
+  font-size: 45px;
   text-align: center;
 }
 
@@ -371,7 +382,7 @@ marquee {
 }
 
 .about-h1 {
-  font-size: 90px;
+  font-size: 45px;
 }
 
 .mission-p {
@@ -459,11 +470,33 @@ marquee {
 
 
 /* Customer Feedback CSS */
-<style>
-  .bordered {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    border: 10px solid yellowgreen;
+
+.bordered {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid yellowgreen;
+}
+
+
+/* Media Queer */
+@media screen and (max-width: 450px) {
+  .logo{
+    width: 30%;
   }
-</style>
+  .game{
+    display: none;
+  }
+  .top-two-btns{
+    display: none;
+  }
+} 
+@media screen and (max-width: 614px) {
+  .game{
+    display: none;
+  }
+  .top-two-btns{
+    display: none;
+  }
+}
+
