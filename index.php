@@ -2,6 +2,8 @@
   include 'header.php';
   ?>
 
+  <h1>Test</h1>
+    
     <marquee>Enhanced Performance...Faster Speeds...Higher FPS... </marquee>
 
 
@@ -20,7 +22,7 @@
     </div>
     
     <?php
-        include "footer.php"
+        include "footer.php";
     ?> 
 
 

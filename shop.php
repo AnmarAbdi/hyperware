@@ -148,5 +148,8 @@
             document.getElementById("myLogin").style.width = "0";
         }
     </script>
-</body>
-</html>
+
+
+<?php
+        include "footer.php";
+    ?>
