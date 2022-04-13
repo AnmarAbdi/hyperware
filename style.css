@@ -1,12 +1,14 @@
 /* Fonts */
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
 @font-face {
-    src: url(./fonts/karmatic.ttf);
-    font-family: karmatic;
+    font-family: 'karmatic';
+    src: url('fonts/ka1.ttf');
   }
   
   @font-face {
-    font-family: pressstart;
-    src: url(./fonts/PressStart2P-Regular.ttf);
+    font-family: "pressstart";
+    src: url(fonts/PressStart2P-Regular.ttf);
   }
 
 body {
@@ -15,14 +17,11 @@ body {
     height: 100%;
   }
   h1 {
-    font-family: karmatic;
+    font-family: "VT323", monospace; 
   }
-  
-  p {
-    font-family: pressstart;
-  }
+    
 a{
-    font-family: karmatic;
+  font-family: 'ArcadeClassic', sans-serif;
 }
 
 .browse-header {
@@ -51,7 +50,7 @@ a{
     float: right;
     background-color: black;
     color: white;
-    font-family: pressstart;
+    font-family: "pressstart";
     border: none;
   }
   
@@ -59,7 +58,7 @@ a{
     float: right;
     background-color: black;
     color: white;
-    font-family: pressstart;
+    font-family: "pressstart";
     border: none;
   }
 
@@ -216,7 +215,7 @@ footer {
 marquee {
     font-size: 64px;
     color: rgba(128, 128, 128, 0.384);
-    font-family: karmatic;
+    font-family: "karmatic";
   }
 .laptop{
   text-align: center;
@@ -317,7 +316,7 @@ marquee {
 }
 
 .shoptitle {
-  font-family: karmatic;
+  font-family: "karmatic";
   text-align: center;
   margin-top: 1%;
   margin-bottom: 2%;
