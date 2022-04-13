@@ -26,7 +26,7 @@
 		<!-- Button trigger modal -->
     <div class="modalsec">
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalQuickView">
-	Launch demo modal
+	Launch demo model
   </button>
   
   <!-- Modal -->

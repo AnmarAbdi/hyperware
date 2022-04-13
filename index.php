@@ -10,9 +10,16 @@
     
     <div class="laptop"> 
         <a href="shop.php">
-            <img src="./img/laptop-with-text.png"></a>
+            <img src="https://drive.google.com/uc?export=view&id=1KSKKFPZ1cwPjYwbbO6Bklyg_bVt8_s5g" alt="laptop-with-text"></a>
     </div>
-    
+    <?php
+    if (isset($_SESSION['userId'])) {
+      echo '<p>You are logged in!</p>';
+    }
+    else {
+      echo '<p>You are logged out!</p>';
+    }
+  ?>
 
     
     <!-- Content -->
@@ -42,31 +49,4 @@
 
 
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "350px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-
-        function openCart() {
-            document.getElementById("myCart").style.width = "350px";
-        }
-
-        function closeCart() {
-            document.getElementById("myCart").style.width = "0";
-        }
-
-        function openLogin() {
-            document.getElementById("myLogin").style.width = "350px";
-        }
-
-        function closeLogin() {
-            document.getElementById("myLogin").style.width = "0";
-        }
-
-    </script>
-</body>
-</html>
+    

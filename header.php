@@ -72,6 +72,55 @@
         }
       ?> 
     </div>
+
+    <div id="mySignup" class="sidecart">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSignup()">
+            <h1>X</h1>
+        </a>
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyfields") {
+              echo '<p class="signuperror">Fill in all fields!</p>';
+            }
+            else if ($_GET["error"] == "invaliduidmail") {
+              echo '<p class="signuperror">Invalid username and email!</p>';
+            }
+            else if ($_GET["error"] == "invaliduid") {
+             echo '<p class="signuperror">Invalid username!</p>';
+            }
+            else if ($_GET["error"] == "invalidmail") {
+             echo '<p class="signuperror">Invalid email!</p>';
+            }
+            else if ($_GET["error"] == "passwordcheck") {
+             echo '<p class="signuperror">Your passwords do not match!</p>';
+            }
+            else if ($_GET["error"] == "usertaken") {
+             echo '<p class="signuperror">Username is already taken!</p>';
+           }
+          }
+          if (isset($_GET["signup"])) {
+           if ($_GET["signup"] == "success") {
+           echo '<p>Signup successful!</p>'; 
+          }
+         }
+         ?>
+         <div class="container d-flex justify-content-center">
+           <div class="row">
+             <div class="card">
+               <form action="includes/signup.inc.php" method="post">
+                 <div class="form-group">
+                   <input type="text" name="uid" placeholder="Username">
+                   <input type="text" name="mail" placeholder="Email">
+                   <input type="password" name="pwd" placeholder="Password">
+                   <input type="password" name="pwd-repeat" placeholder="Repeat password">
+                 </div>
+                 <button type="submit" name="signup-submit" class="btn btn-primary">Submit</button>
+               </form>
+             </div>
+           </div>
+         </div>
+    </div>
+
     <!--Login | Signup Buttons-->
     <div class="top-bar row">
         <div class="top-two-btns col-10">
@@ -80,16 +129,50 @@
 </div>
 <div class="top-two-btns col-2">  
     <span class="loginbutton" style="font-size:30px;cursor:pointer" onclick="openLogin()"><p class=login>login</p></span>
+    <span class="signupbutton" style="font-size:30px;cursor:pointer" onclick="openSignup()"><p class=signup>signup</p></span>
         </div>
         
     </div>
     <!-- Nav and Cart Buttons (have to be under top bar)-->
-    <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="./img/nav.png"
+    <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="https://drive.google.com/uc?export=view&id=1lrlJ-Ed3hqe17LFDfVzPH8nfNRQGgDeC"
         class="cart"></span>
-    <span class="cartbutton" style="font-size:30px;cursor:pointer" onclick="openCart()"><img src="./img/cart.png"
+    <span class="cartbutton" style="font-size:30px;cursor:pointer" onclick="openCart()"><img src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5"
         class="cart"></span>
 
         
-        <img src="./img/logo.png" class="logo">
+        <img src="https://drive.google.com/uc?export=view&id=1Gl3FStpL-t5d98cNxN55G__UtpZlr5Ge" class="logo">
 
-       
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function openCart() {
+            document.getElementById("myCart").style.width = "350px";
+        }
+
+        function closeCart() {
+            document.getElementById("myCart").style.width = "0";
+        }
+
+        function openLogin() {
+            document.getElementById("myLogin").style.width = "350px";
+        }
+
+        function closeLogin() {
+            document.getElementById("myLogin").style.width = "0";
+        }
+
+        function openSignup() {
+            document.getElementById("mySignup").style.width = "350px";
+        }
+
+        function closeSignup() {
+            document.getElementById("mySignup").style.width = "0";
+        }
+
+    </script>

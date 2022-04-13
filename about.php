@@ -40,7 +40,7 @@
         <div class="row padding">
             <div class="col-md-4">
                 <div class="card border-dark rounded-0 border-3" style="max-width: 40rem;">
-                    <img class="card-img-top rounded-0" src="./img/john-avatar.png">
+                    <img src="https://drive.google.com/uc?export=view&id=1lNpJCCM8EB_pW4NrrOLRtuyTZzmidrdj" class="card-img-top rounded-0">
                     <div class="card-body">
                         <p class="card-title"><b>John Choi</b></p>
                         <p class="card-text">Hello, I’m John. Coming from the heart of South Korea, I’ve been inspired to take my
@@ -53,7 +53,7 @@
 
             <div class="col-md-4">
                 <div class="card border-dark rounded-0 border-3" style="max-width: 40rem;">
-                    <img class="card-img-top rounded-0" src="./img/anmar-avatar.png">
+                    <img src="https://drive.google.com/uc?export=view&id=1bk-xwEiy_EQPJzj3mdn2zljLoAQMjPvD" class="card-img-top rounded-0">
                     <div class="card-body">
                         <p class="card-title"><b>Anmar Abdi</b></p>
                         <p class="card-text">I’m Anmar! I tried to build a PC during the chip shortage and had trouble
@@ -65,7 +65,7 @@
 
             <div class="col-md-4">
                 <div class="card border-dark rounded-0 border-3" style="max-width: 40rem;">
-                    <img class="card-img-top rounded-0" src="img/steven-avatar.png">
+                    <img  src="https://drive.google.com/uc?export=view&id=1VSPK6pR3rs6FsgMFK3aqzRKzaFkxl7tt" class="card-img-top rounded-0" src="https://drive.google.com/uc?export=view&id=1u_f0aHIN_lh8YWZe7MicEHbXA7XTa42T">
                     <div class="card-body">
                         <p class="card-title"><b>Steven Pj</b></p>
                         <p class="card-text">Hi, i’m Steven Pjontek, I was born in the wilderness of the amazon

@@ -52,7 +52,9 @@ if (isset($_POST['signup-submit'])) {
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../signup.php?signup=success");
+
+                    /** https://stackoverflow.com/questions/14523468/redirecting-to-previous-page-after-login-php */
+                    header("Location:" . urlencode($_SERVER['REQUEST_URI']) . "php?signup=success");
                     exit();
                 }
             }
