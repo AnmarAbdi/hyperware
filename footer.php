@@ -17,7 +17,7 @@
             </div>
             <div class="col-md-4">
                 <div class="footer-text">
-                    <a href="contact.html" class="contact-footer">
+                    <a href="contact.php" class="contact-footer">
                         <h1>Contact</h1>
                     </a>
                 </div>

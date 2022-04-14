@@ -1,9 +1,8 @@
 <?php
   include 'header.php';
   ?>
-    <h1 class="large-h1">Contact</h1>
-    <br>
-    <br>
+  <br>
+  <br>
     <div class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
@@ -12,7 +11,6 @@
             <br>
         </div>
     </div>
-    
     <div class="container">
         <p class="words">SEND E-MAIL</p>
         <form class="contact-form" action="contactform.php" method="post">

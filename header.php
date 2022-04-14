@@ -9,9 +9,14 @@
     <title>HyperWare</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://st.1001fonts.net/img/charmap/ttf/0/2/karmatic-arcade.regular.character-map-1.png" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+ 
     <link href="http://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +25,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
-    <!-- Constants Throughout Website -->
+    
         <!-- Navbar and Cart Elements -->
     <!--Nav Button-->
     <div id="mySidenav" class="sidenav">
@@ -123,13 +128,9 @@
 
     <!--Login | Signup Buttons-->
     <div class="top-bar row">
-        <div class="top-two-btns col-10">
-        
-      <p class="game"><button class="game">Click here to play game!</button></p>
-</div>
-<div class="top-two-btns col-2">  
-    <span class="loginbutton" style="font-size:30px;cursor:pointer" onclick="openLogin()"><p class=login>login</p></span>
-    <span class="signupbutton" style="font-size:30px;cursor:pointer" onclick="openSignup()"><p class=signup>signup</p></span>
+        <div class="top-two-btns">  
+            <span class="loginbutton" style="font-size:20px;cursor:pointer" onclick="openLogin()"><p class=login>Login </p></span>
+            <span class="signupbutton" style="font-size:20px;cursor:pointer" onclick="openSignup()"><p class=signup>Signup| </p></span>
         </div>
         
     </div>
@@ -138,10 +139,9 @@
         class="cart"></span>
     <span class="cartbutton" style="font-size:30px;cursor:pointer" onclick="openCart()"><img src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5"
         class="cart"></span>
-
-        
-        <img src="https://drive.google.com/uc?export=view&id=1Gl3FStpL-t5d98cNxN55G__UtpZlr5Ge" class="logo">
-
+        <a href="index.php">
+            <img src="https://drive.google.com/uc?export=view&id=1Gl3FStpL-t5d98cNxN55G__UtpZlr5Ge" class="logo">
+        </a>
         <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "350px";
