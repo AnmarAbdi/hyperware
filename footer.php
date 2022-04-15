@@ -21,7 +21,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 footer-text">
                 <p>EggplantEmoji🍆</p>
             </div>
         </div>
