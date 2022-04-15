@@ -1,4 +1,3 @@
-
 <!-- Footer -->
 <footer>
     <div class="container-fluid padding">
@@ -30,4 +29,5 @@
 </footer>
 
 </body>
+
 </html>
