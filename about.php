@@ -1,6 +1,6 @@
 <?php
   include 'header.php';
-  ?>
+?>
 
     <h1 class="large-h3">About Us</h1>
     <br>
@@ -78,74 +78,14 @@
         </div>
     </div>
 
+    <div class="game-container">
+        <?php
+            include "game.php"
+        ?>
+    </div>
+    <?php
+        include "footer.php";
+    ?> 
 
 
-    <!--- Footer -->
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="footer-text">
-                        <h1>Our Socials</h1>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="font-awesome">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-yelp"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-text">
-                        <a href="contact.html">
-                            <h1>Contact</h1>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <p>EggplantEmoji🍆</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!---End of Footer-->
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-
-        function openCart() {
-            document.getElementById("myCart").style.width = "250px";
-        }
-
-        function closeCart() {
-            document.getElementById("myCart").style.width = "0";
-        }
-
-        function openLogin() {
-            document.getElementById("myLogin").style.width = "250px";
-        }
-
-        function closeLogin() {
-            document.getElementById("myLogin").style.width = "0";
-        }
-
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-</body>
-
-</html>
+   
