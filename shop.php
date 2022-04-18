@@ -11,13 +11,28 @@
 <div class="card mb-3" style="max-width: 75%;">
 	<div class="row no-gutters">
 		<div class="col-md-4">
-			<img src="./img/ram.PNG" class="card-img" alt="Ram Stick">
+			<img src="https://drive.google.com/uc?export=view&id=1CFcFp9t6erhpLQwxQxWHf280NPIV42m0" class="card-img" alt="Ram Stick">
 		</div>
 		<div class="col-md-8">
 			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
+			<div class="row">
+					<div class="col-7">
+				<h1 class="card-title">Ram</h5>
 				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
 					content. This content is a little bit longer.</p>
+					</div>
+					<div class="col-5">
+						<p>Specs</p>
+						<ul>
+							<li>
+								<p class="specslist">Faster loading times!</p>
+							</li>
+							<li>
+								<p class="specslist">Get it now!</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 			</div>
 
