@@ -2682,7 +2682,7 @@
             </td>
             <td><a href="https://twitter.com/share" class="twitter-share-button"
                 data-url="http://apps.thecodepost.org/trex/trex.html" data-text="Cool Hidden T-Rex game"
-                data-via="thecodepost" data-hashtags="trexgame">Tweet</a>
+                data-via="thecodepost" data-hashtags="trexgame"></a>
               <script>
                 ! function (d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0],

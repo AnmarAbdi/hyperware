@@ -12,7 +12,7 @@
     </div>
 </div>
 <div class="container">
-        <p class="words col-sm">Give Us Feedback!</p>
+    <p class="words col-sm">Give Us Feedback!</p> 
     <form class="contact-form" action="contactform.php" method="post">
         <div class="row">
             <input type="text" name="name" placeholder="Full name" class="col-sm">
@@ -21,6 +21,7 @@
         <div class="row">  
             <textarea name="message" placeholder="Message" class=""></textarea>
         </div>  
+        <br>
         <div class="row">
             <button type="submit" name="submit">SEND MAIL</button>
         </div>  

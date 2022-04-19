@@ -181,7 +181,7 @@ footer a {
 }
 
 .footer-text {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .contact-footer:hover {
@@ -194,7 +194,9 @@ marquee {
   color: rgba(128, 128, 128, 0.384);
   font-family: "Press Start 2P";
 }
-
+.browse-header{
+  background-color: black;
+}
 .laptop {
   text-align: center;
   animation-name: laptop;
@@ -340,4 +342,3 @@ button[type=submit]:hover {
 .words {
   font-size: 40px;
 }
-
