@@ -16,7 +16,9 @@ a {
 h1 {
   font-family: 'Press Start 2P', cursive;
 }
-
+h5{
+  font-family: 'Press Start 2P', cursive;
+}
 /* Top Bar Area */
 .top-bar {
   background-color: black;
@@ -195,7 +197,11 @@ marquee {
   font-family: "Press Start 2P";
 }
 .browse-header{
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+}
+.split-text{
+  color: white;
+  text-align: center;
 }
 .laptop {
   text-align: center;
@@ -220,7 +226,6 @@ marquee {
     transform: translate(0, -0px);
   }
 }
-
 /* ------------------------------------------------------------------About Page----------------------------------------------- */
 .lead {
   font-size: 1.2rem;
