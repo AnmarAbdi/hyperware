@@ -356,3 +356,15 @@ button[type=submit]:hover {
   height: 700px;
 }
 
+
+
+
+
+/* Responsiveness */
+
+
+@media only screen and (max-width: 570px) {
+  .message{
+    display: block;
+  }
+}
