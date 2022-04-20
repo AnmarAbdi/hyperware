@@ -145,14 +145,24 @@
             <span class="signupbutton" style="font-size:20px;cursor:pointer" onclick="openSignup()">
                 <p class=signup>Signup| </p>
             </span>
+            <div class="message">
+                <?php
+                if (isset($_SESSION['userId'])) {
+                echo '<p class="message">Welcome back!</p>';
+                }
+                else {
+                echo '<p>You are logged out!</p>';
+                }
+            ?>
+            </div>
+            
         </div>
 
     </div>
     <!-- Nav and Cart Buttons (have to be under top bar)-->
     <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
             src="https://drive.google.com/uc?export=view&id=1lrlJ-Ed3hqe17LFDfVzPH8nfNRQGgDeC" class="cart"></span>
-    <span class="cartbutton" style="font-size:30px;cursor:pointer" onclick="openCart()"><img
-            src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5" class="cart"></span>
+    
 
 
     <a href="index.php">
@@ -166,15 +176,6 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
-        function openCart() {
-            document.getElementById("myCart").style.width = "350px";
-        }
-
-        function closeCart() {
-            document.getElementById("myCart").style.width = "0";
-        }
-
         function openLogin() {
             document.getElementById("myLogin").style.width = "350px";
         }

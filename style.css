@@ -63,7 +63,6 @@ h5{
   margin-top: 0px;
   padding-right: 30px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -189,7 +188,9 @@ footer a {
 .contact-footer:hover {
   color: rgb(124, 124, 124);
 }
-
+.message{
+  color: white;
+}
 /* ---------------------------------------------------Home Page------------------------------------------------------------ */
 marquee {
   font-size: 64px;
@@ -290,7 +291,9 @@ marquee {
   display: table;
   clear: both;
 }
-
+.shop-items{
+  width: 20px;
+}
 /* -----------------------------------------------CONTACT PAGE----------------------------------*/
 /* Customer Feedback CSS */
 /* Style inputs with type="text", select elements and textareas */
@@ -347,3 +350,9 @@ button[type=submit]:hover {
 .words {
   font-size: 40px;
 }
+.google-maps {
+  padding: 3rem;
+  width: 100%;
+  height: 700px;
+}
+

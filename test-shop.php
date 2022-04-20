@@ -34,9 +34,6 @@
             <h1>Contact</h1>
         </a>
     </div>
-
-
-
     <!--Cart Button-->
     <div id="myCart" class="sidecart">
         <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">
@@ -138,8 +135,14 @@
     <!-- Nav and Cart Buttons (have to be under top bar)-->
     <span class="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
             src="https://drive.google.com/uc?export=view&id=1lrlJ-Ed3hqe17LFDfVzPH8nfNRQGgDeC" class="cart"></span>
-    <span class="cartbutton" style="font-size:30px;cursor:pointer" onclick="openCart()"><img
-            src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5" class="cart"></span>
+    <!--Cart Button-->
+        <div id="cart-button" class="cartbutton">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <img src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5" class="cart"></span>
+            </button>
+            <span id="cart-counter" class="badge bg-secondary">1</span>
+        </div>        
 
 
     <a href="index.php">
@@ -147,18 +150,7 @@
     </a>
 
 
-        <!--Cart Button-->
-        <div id="cart-button">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                aria-controls="offcanvasCart">
-                <img
-            src="https://drive.google.com/uc?export=view&id=1kv-hc0BQ4t4P4mKXN5xntrcvjt3DH9t5" class="cart"></span>
-            </button>
-            <span id="cart-counter" class="badge bg-secondary">1</span>
-        </div>
-
-
-
+        
         <!--Menu-->
         <div class="container-fluid menu" id="order-menu">
             <div class="row gx-5 justify-content-center">
@@ -166,7 +158,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Appetizers</h4>
+                                <h4 class="card-title">Our Products</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -174,7 +166,7 @@
                                             <div class="col menu-price" id="price1">$9</div>
                                         </div>
                                         <div class="row">
-                                            <p>Super Fast RAM YAY</p>
+                                            <p>So many chrome tabs</p>
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-12">
@@ -185,11 +177,12 @@
                                     </li>
                                     <hr>
                                     <li>
-                                        <div class="row">Hard Drive!</div>
+                                        <div class="row">
+                                            <div class="col menu-item" id="item2">GPU</div>
                                             <div class="col menu-price" id="price2">$9</div>
                                         </div>
                                         <div class="row">
-                                            <p>More Space!</p>
+                                            <p>Beautiful Graphics</p>
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-12">
@@ -201,11 +194,11 @@
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col menu-item" id="item3">GPU Power</div>
+                                            <div class="col menu-item" id="item3">Hard Drive</div>
                                             <div class="col menu-price" id="price3">$15</div>
                                         </div>
                                         <div class="row">
-                                            <p>Everything runs so smooth!</p>
+                                            <p>So many pirated games</p>
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-12">
@@ -228,7 +221,7 @@
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasCartLabel">Your Cart</h5>
+                <h5 class="offcanvas-title" id="offcanvasCartLabel">Your Order</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
@@ -251,10 +244,7 @@
         </div>
     </main>
     
-    <?php
-        include "footer.php";
-    ?>
-
+    
     <script src="js\bootstrap.bundle.min.js">
     </script>
     <script src="js\cart.js"></script>
