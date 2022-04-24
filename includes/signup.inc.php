@@ -6,30 +6,30 @@ if (isset($_POST['signup-submit'])) {
     $password = $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
-        header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=emptyfields&uid=".$username."&mail=".$email);
         exit();
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../signup.php?error=invalidmailuid");
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=invalidmailuid");
         exit();
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../signup.php?error=invalidmail&uid=".$username);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=invalidmail&uid=".$username);
         exit();
     }
     else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../signup.php?error=invaliduid&mail=".$email);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=invaliduid&mail=".$email);
         exit();
     }
     else if ($password !== $passwordRepeat) {
-        header("Location: ../signup.php?error=passwordcheck&uid=".$username."&mail=".$email);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=passwordcheck&uid=".$username."&mail=".$email);
         exit();
     }
     else {
         $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqlerror");
+            header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=sqlerror");
             exit();
         }
         else {
@@ -38,23 +38,21 @@ if (isset($_POST['signup-submit'])) {
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if ($resultCheck > 0) {
-                header("Location: ../signup.php?error=usertaken&mail=".$email);
+                header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=usertaken&mail=".$email);
                 exit();
             }
             else {
                 $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../signup.php?error=sqlerror");
+                    header("Location: " . $_SERVER['HTTP_REFERER'] . "?error=sqlerror");
                     exit();
                 }
                 else {
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
                     mysqli_stmt_execute($stmt);
-
-                    /** https://stackoverflow.com/questions/14523468/redirecting-to-previous-page-after-login-php */
-                    header("Location:" . urlencode($_SERVER['REQUEST_URI']) . "php?signup=success");
+                    header("Location: " . $_SERVER['HTTP_REFERER'] . "?signup=success"); 
                     exit();
                 }
             }
@@ -64,6 +62,6 @@ if (isset($_POST['signup-submit'])) {
     mysqli_close($conn);
 }
 else {
-    header("Location: ../signup.php");
+    header("Location: " . $_SERVER['HTTP_REFERER'] . "");
     exit();
 }
