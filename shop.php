@@ -1,186 +1,198 @@
 <?php
   include 'header.php';
   ?>
-
-
-<!-------------------Shop body--------------------->
-
-<h2 class="shoptitle">Upgrades</h2>
-
-<!-- img left -->
-<div class="card mb-3" style="max-width: 75%;">
-	<div class="row no-gutters">
-		<div class="col-md-4">
-			<img src="https://drive.google.com/uc?export=view&id=1CFcFp9t6erhpLQwxQxWHf280NPIV42m0" class="card-img" alt="Ram Stick">
-		</div>
-		<div class="col-md-8">
-			<div class="card-body">
-			<div class="row">
-					<div class="col-7">
-				<h1 class="card-title">Ram</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-					content. This content is a little bit longer.</p>
+<head>
+	<link rel="stylesheet" href="shop.css">
+		<title>PHP Ajax Shopping Cart by using Bootstrap Popover</title>
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+		.popover
+		{
+		    width: 100%;
+		    max-width: 800px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br />
+			<h3 align="center"><a href="#">PHP Ajax Shopping Cart by using Bootstrap Popover</a></h3>
+			<br />
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Menu</span>
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+						<a class="navbar-brand" href="/">Webslesson</a>
 					</div>
-					<div class="col-5">
-						<p>Specs</p>
-						<ul>
+					
+					<div id="navbar-cart" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
 							<li>
-								<p class="specslist">Faster loading times!</p>
-							</li>
-							<li>
-								<p class="specslist">Get it now!</p>
+								<a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
+									<span class="glyphicon glyphicon-shopping-cart"></span>
+									<span class="badge"></span>
+									<span class="total_price">$ 0.00</span>
+								</a>
 							</li>
 						</ul>
 					</div>
+					
 				</div>
-				<p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
-			</div>
-
-			<!--Start of Modal Testing-->
-
-
-			<!-- Button trigger modal -->
-			<div class="modalsec">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalQuickView">
-					Launch demo model
-				</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="modalQuickView" tabindex="-1" aria-labelledby="myModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="myModalLabel">Modal title</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"
-									aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<h5>test</h5>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
+			</nav>
+			<!-- inside of cart -->
+			<div id="popover_content_wrapper" style="display: none">
+				<span id="cart_details"></span>
+				<div align="right">
+					<a href="#" class="btn btn-primary" id="check_out_cart">
+					<span class="glyphicon glyphicon-shopping-cart"></span> Check out
+					</a>
+					<a href="#" class="btn btn-default" id="clear_cart">
+					<span class="glyphicon glyphicon-trash"></span> Clear
+					</a>
 				</div>
+			</div>
 
-				<!--Modal Testing End-->
+			<div id="display_item">
+
 
 			</div>
+			
 		</div>
-	</div>
-</div>
-<!-- img right -->
-<div class="card mb-3" style="max-width: 75%;">
-	<div class="row no-gutters">
-		<div class="col-md-8">
-			<div class="card-body">
-				<h5 class="card-title">CPU</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-					content. This content is a little bit longer.</p>
-					<div class="col-5">
-						<p>Specs</p>
-						<ul>
-							<li>
-								<p class="specslist">Faster loading times!</p>
-							</li>
-							<li>
-								<p class="specslist">Get it now!</p>
-							</li>
-						</ul>
-					</div>
-				<p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<img src="https://drive.google.com/uc?export=view&id=1wipESP65C7hSdSSwC3GirUbTo_vnqpKs" class="card-img" alt="CPU">
-		</div>
-	</div>
-</div>
+		<?php
+        include "footer.php";
+    ?>
+<script>  
+$(document).ready(function(){
 
-<!-- img left -->
-<div class="card mb-3" style="max-width: 75%;">
-	<div class="row no-gutters">
-		<div class="col-md-4">
-			<img src="https://drive.google.com/uc?export=view&id=1J4pURheuUYpMpWZDPwzsoBGZg4Gngixn" class="card-img" alt="GPU">
-		</div>
-		<div class="col-md-8">
-			<div class="card-body">
-				<h5 class="card-title">GPU</h5>
-				<p class="card-text">The GPU is a specialized processor designed to accelerate graphics rendering and accelerate the creation of images.</p>
-				<div class="col-5">
-						<p>Specs</p>
-						<ul>
-							<li>
-								<p class="specslist">Faster loading times!</p>
-							</li>
-							<li>
-								<p class="specslist">Get it now!</p>
-							</li>
-						</ul>
-					</div>
-				<p class="card-text"><small class="text-muted">Last updated 56 mins ago</small></p>
-			</div>
-		</div>
-	</div>
-</div>
+	load_product();
 
-<!-- img right -->
-<div class="card mb-3" style="max-width: 75%;">
-	<div class="row no-gutters">
-		<div class="col-md-8">
-			<div class="card-body">
-				<h5 class="card-title">Hard Drive</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-					content. This content is a little bit longer.</p>
-					<div class="col-5">
-						<p>Specs</p>
-						<ul>
-							<li>
-								<p class="specslist">Faster loading times!</p>
-							</li>
-							<li>
-								<p class="specslist">Get it now!</p>
-							</li>
-						</ul>
-					</div>
-				<p class="card-text"><small class="text-muted">Last updated 53 mins ago</small></p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<img src="https://drive.google.com/uc?export=view&id=1ND-N-nIYrZo_v5fbzMCOVjr0IKd8Jw3G" class="card-img" alt="Hard Drive">
-		</div>
-	</div>
-</div>
+	load_cart_data();
+    
+	function load_product()
+	{
+		$.ajax({
+			url:"fetch_item.php",
+			method:"POST",
+			success:function(data)
+			{
+				$('#display_item').html(data);
+			}
+		});
+	}
 
-<!-- img left -->
-<div class="card mb-3" style="max-width: 75%;">
-	<div class="row no-gutters">
-		<div class="col-md-4">
-			<img src="./img/ram.PNG" class="card-img" alt="Ram Stick">
-		</div>
-		<div class="col-md-8">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-					content. This content is a little bit longer.</p>
-					<div class="col-5">
-						<p>Specs</p>
-						<ul>
-							<li>
-								<p class="specslist">Faster loading times!</p>
-							</li>
-							<li>
-								<p class="specslist">Get it now!</p>
-							</li>
-						</ul>
-					</div>
-				<p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
-			</div>
-		</div>
-	</div>
+	function load_cart_data()
+	{
+		$.ajax({
+			url:"fetch_cart.php",
+			method:"POST",
+			dataType:"json",
+			success:function(data)
+			{
+				$('#cart_details').html(data.cart_details);
+				$('.total_price').text(data.total_price);
+				$('.badge').text(data.total_item);
+			}
+		});
+	}
+
+	$('#cart-popover').popover({
+		html : true,
+        container: 'body',
+        content:function(){
+        	return $('#popover_content_wrapper').html();
+        }
+	});
+
+	$(document).on('click', '.add_to_cart', function(){
+		var product_id = $(this).attr("id");
+		var product_name = $('#name'+product_id+'').val();
+		var product_price = $('#price'+product_id+'').val();
+		var product_quantity = $('#quantity'+product_id).val();
+		var action = "add";
+		if(product_quantity > 0)
+		{
+			$.ajax({
+				url:"action.php",
+				method:"POST",
+				data:{product_id:product_id, product_name:product_name, product_price:product_price, product_quantity:product_quantity, action:action},
+				success:function(data)
+				{
+					load_cart_data();
+					alert("Item has been Added into Cart");
+				}
+			});
+		}
+		else
+		{
+			alert("lease Enter Number of Quantity");
+		}
+	});
+
+	$(document).on('click', '.delete', function(){
+		var product_id = $(this).attr("id");
+		var action = 'remove';
+		if(confirm("Are you sure you want to remove this product?"))
+		{
+			$.ajax({
+				url:"action.php",
+				method:"POST",
+				data:{product_id:product_id, action:action},
+				success:function()
+				{
+					load_cart_data();
+					$('#cart-popover').popover('hide');
+					alert("Item has been removed from Cart");
+				}
+			})
+		}
+		else
+		{
+			return false;
+		}
+	});
+
+	$(document).on('click', '#clear_cart', function(){
+		var action = 'empty';
+		$.ajax({
+			url:"action.php",
+			method:"POST",
+			data:{action:action},
+			success:function()
+			{
+				load_cart_data();
+				$('#cart-popover').popover('hide');
+				alert("Your Cart has been clear");
+			}
+		});
+	});
+    
+});
+
+</script>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form method="post" action="ordered.php" class="form-container">
+    <h1>Order Item</h1>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="psw"><b>Card Number</b></label>
+    <input type="password" placeholder="Enter Card Number" name="psw" required>
+
+	<label for="address"><b>CVV</b></label>
+    <input type="password" placeholder="Enter CVV" name="psw" required>
+
+    <button type="submit" class="btn">Place Order</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
 </div>
 
 
@@ -196,21 +208,19 @@
 	function closeNav() {
 		document.getElementById("mySidenav").style.width = "0";
 	}
-
-	function openCart() {
-		document.getElementById("myCart").style.width = "350px";
-	}
-
-	function closeCart() {
-		document.getElementById("myCart").style.width = "0";
-	}
-
 	function openLogin() {
 		document.getElementById("myLogin").style.width = "350px";
 	}
 
 	function closeLogin() {
 		document.getElementById("myLogin").style.width = "0";
+	}
+	function openForm() {
+  		document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+		document.getElementById("myForm").style.display = "none";
 	}
 </script>
 

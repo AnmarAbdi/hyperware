@@ -38,7 +38,6 @@
 </div>
 
 
-
 <?php
         include "footer.php"
     ?>
@@ -51,14 +50,6 @@
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-    }
-
-    function openCart() {
-        document.getElementById("myCart").style.width = "250px";
-    }
-
-    function closeCart() {
-        document.getElementById("myCart").style.width = "0";
     }
 
     function openLogin() {

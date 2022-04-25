@@ -66,7 +66,9 @@ if (isset($_GET['page_id'])) {
                 <input name="name" type="text" placeholder="Your Name" required>
                 <input name="rating" type="number" min="1" max="5" placeholder="Rating (1-5)" required>
             </div>
-            <textarea name="content" placeholder="Write your review here..." required></textarea>
+            <div class="row">
+                <textarea name="content" placeholder="Write your review here..." required></textarea>
+            </div>
             <button type="submit">Submit Review</button>
         </form>
     </div>
