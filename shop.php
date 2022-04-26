@@ -49,6 +49,17 @@
 								}
 							?>
                         </p> 
+                        <?php
+							$sql = "SELECT * FROM product WHERE id = 1;";
+							$result = mysqli_query($conn, $sql);
+							$resultCheck = mysqli_num_rows($result);
+
+							if ($resultCheck > 0) {
+								while ($row = mysqli_fetch_assoc($result)) {
+									echo $row['price'];
+								}
+							}
+						?>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
@@ -73,6 +84,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 1;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -140,19 +163,19 @@
                         </p>
 						<!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop1">
                             UPGRADE!
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="staticBackdropLabel">
                                             <?php
-												$sql = "SELECT * FROM product WHERE id = 1;";
+												$sql = "SELECT * FROM product WHERE id = 2;";
 												$result = mysqli_query($conn, $sql);
 												$resultCheck = mysqli_num_rows($result);
 
@@ -162,6 +185,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 2;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -255,19 +290,19 @@
                         </p>
 						<!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop2">
                             UPGRADE!
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="staticBackdropLabel">
                                             <?php
-												$sql = "SELECT * FROM product WHERE id = 1;";
+												$sql = "SELECT * FROM product WHERE id = 3;";
 												$result = mysqli_query($conn, $sql);
 												$resultCheck = mysqli_num_rows($result);
 
@@ -277,6 +312,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 3;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -344,19 +391,19 @@
                         </p>
 						<!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop3">
                             UPGRADE!
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="staticBackdropLabel">
                                             <?php
-												$sql = "SELECT * FROM product WHERE id = 1;";
+												$sql = "SELECT * FROM product WHERE id = 4;";
 												$result = mysqli_query($conn, $sql);
 												$resultCheck = mysqli_num_rows($result);
 
@@ -366,6 +413,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 4;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -461,19 +520,19 @@
                         </p>
 						<!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop4">
                             UPGRADE!
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="staticBackdropLabel">
                                             <?php
-												$sql = "SELECT * FROM product WHERE id = 1;";
+												$sql = "SELECT * FROM product WHERE id = 5;";
 												$result = mysqli_query($conn, $sql);
 												$resultCheck = mysqli_num_rows($result);
 
@@ -483,6 +542,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 5;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -552,19 +623,19 @@
                         </p>
 						<!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
+                            data-bs-target="#staticBackdrop5">
                             UPGRADE!
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="staticBackdropLabel">
                                             <?php
-												$sql = "SELECT * FROM product WHERE id = 1;";
+												$sql = "SELECT * FROM product WHERE id = 6;";
 												$result = mysqli_query($conn, $sql);
 												$resultCheck = mysqli_num_rows($result);
 
@@ -574,6 +645,18 @@
 													}
 												}
 											?> Upgrade
+                                            <br>
+                                            $<?php
+												$sql = "SELECT * FROM product WHERE id = 6;";
+												$result = mysqli_query($conn, $sql);
+												$resultCheck = mysqli_num_rows($result);
+
+												if ($resultCheck > 0) {
+													while ($row = mysqli_fetch_assoc($result)) {
+														echo $row['price'];
+													}
+												}
+											?>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
