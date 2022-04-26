@@ -323,6 +323,14 @@ marquee {
   font-family: "Press Start 2P";
 }
 
+.whitefont {
+  color: white;
+}
+
+.blackcard {
+  background-color: black!important;
+}
+
 .open-button {
   background-color: #555;
   color: white;

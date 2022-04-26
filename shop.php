@@ -6,7 +6,7 @@
 <body>
     <h1 class="shoptitle">Available Upgrades</h3>
         <!-- img left -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-4 card-image">
                     <?php
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 1;";
 								$result = mysqli_query($conn, $sql);
@@ -49,6 +49,7 @@
 								}
 							?>
                         </p> 
+                        <h6 class="pressstart">
                         <?php
 							$sql = "SELECT * FROM product WHERE id = 1;";
 							$result = mysqli_query($conn, $sql);
@@ -60,6 +61,7 @@
 								}
 							}
 						?>
+                        </h6>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary pressstart" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
@@ -131,11 +133,11 @@
         <br>
 
         <!-- right -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 2;";
 								$result = mysqli_query($conn, $sql);
@@ -245,7 +247,7 @@
         <br>
 
         <!-- left -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-4 card-image">
                     <?php
@@ -262,7 +264,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 3;";
 								$result = mysqli_query($conn, $sql);
@@ -359,11 +361,11 @@
         <br>
 
         <!-- right -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 4;";
 								$result = mysqli_query($conn, $sql);
@@ -475,7 +477,7 @@
         <br>
 
         <!-- left -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-4 card-image">
                     <?php
@@ -492,7 +494,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 5;";
 								$result = mysqli_query($conn, $sql);
@@ -591,11 +593,11 @@
         <br>
 
         <!-- right -->
-        <div class="card mb-3" style="max-width: 75%;">
+        <div class="card mb-3 blackcard whitefont" style="max-width: 70%;">
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title pressstart">
                             <?php
 								$sql = "SELECT * FROM product WHERE id = 6;";
 								$result = mysqli_query($conn, $sql);
