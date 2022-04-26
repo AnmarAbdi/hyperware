@@ -80,10 +80,12 @@
         else {
           echo '<form action="includes/login.inc.php" method="post">
           <input type="text" name="mailuid" placeholder="Username/Email">
-          <input type="password" name="pwd" placeholder="Password">
-          <button class="btn btn-outline-info" type="submit" name="login-submit">Login</button>
+          <input class="blackbg pressstart" type="password" name="pwd" placeholder="Password">
+          <br>
+          <button class="btn btn-outline-info pressstart" type="submit" name="login-submit">Login</button>
+          <a href="signup.php" class="btn btn-outline-info">Signup</a>
       </form>
-      <a href="signup.php" class="btn btn-outline-info">Signup</a>';
+      ';
         }
       ?>
     </div>
@@ -121,15 +123,16 @@
          ?>
         <div class="container d-flex justify-content-center">
             <div class="row">
-                <div class="card">
-                    <form action="includes/signup.inc.php" method="post">
-                        <div class="form-group">
+                <div class="card blackbg">
+                    <form action="includes/signup.inc.php" class="blackbg" method="post">
+                        <div class="form-group pressstart">
                             <input type="text" name="uid" placeholder="Username">
                             <input type="text" name="mail" placeholder="Email">
-                            <input type="password" name="pwd" placeholder="Password">
-                            <input type="password" name="pwd-repeat" placeholder="Repeat password">
+                            <input class="blackbg" type="password" name="pwd" placeholder="Password">
+                            <input class="blackbg" type="password" name="pwd-repeat" placeholder="Repeat password">
                         </div>
-                        <button type="submit" name="signup-submit" class="btn btn-primary">Submit</button>
+                        <hr class="navhr">
+                        <button type="submit" name="signup-submit" class="btn btn-primary pressstart">Submit</button>
                     </form>
                 </div>
             </div>
@@ -140,18 +143,18 @@
     <div class="top-bar row">
         <div class="top-two-btns">
             <span class="loginbutton" style="font-size:20px;cursor:pointer" onclick="openLogin()">
-                <p class=login>Login </p>
+                <p class="login topwords">Login </p>
             </span>
             <span class="signupbutton" style="font-size:20px;cursor:pointer" onclick="openSignup()">
-                <p class=signup>Signup| </p>
+                <p class="signup topwords">Signup| </p>
             </span>
             <div class="message">
                 <?php
                 if (isset($_SESSION['userId'])) {
-                echo '<p class="message">Welcome back!</p>';
+                echo '<p class="message topwords">Welcome back!</p>';
                 }
                 else {
-                echo '<p>You are logged out!</p>';
+                echo '<p class="message topwords">You are logged out!</p>';
                 }
             ?>
             
