@@ -203,6 +203,7 @@ marquee {
 .split-text{
   color: white;
   text-align: center;
+  font-family: "Press Start 2P";
 }
 .laptop {
   text-align: center;
@@ -227,6 +228,11 @@ marquee {
     transform: translate(0, -0px);
   }
 }
+
+
+
+
+
 /* ------------------------------------------------------------------About Page----------------------------------------------- */
 .lead {
   font-size: 1.2rem;
@@ -294,6 +300,19 @@ marquee {
 .shop-items{
   width: 20px;
 }
+
+.card-image {
+  width: 100px;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.pressstart {
+  font-family: "Press Start 2P";
+}
+
 
 /* -----------------------------------------------CONTACT PAGE----------------------------------*/
 .reviews{

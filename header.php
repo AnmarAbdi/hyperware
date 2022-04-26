@@ -154,6 +154,7 @@
                 echo '<p>You are logged out!</p>';
                 }
             ?>
+            
             </div>
             
         </div>
@@ -179,7 +180,6 @@
         function openLogin() {
             document.getElementById("myLogin").style.width = "350px";
         }
-
         function closeLogin() {
             document.getElementById("myLogin").style.width = "0";
         }
